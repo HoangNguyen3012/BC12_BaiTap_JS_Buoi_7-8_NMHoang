@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bai Tap JS Buoi 7 & 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body style="text-align: center;width: 70%; margin: auto;">
+    <h1>Chức năng của dãy số</h1>
+    <section>
+        <h3>Nhập vào dãy số nguyên</h3>
+        <div style="width: 40%; margin: auto;">
+            <form class="form-inline my-5">
+                <div class="form-group">
+                    <label for="">Thêm số nguyên vào dãy</label>
+                    <input type="number" name="" id="addInt" class="form-control mx-sm-3" placeholder="Nhập số nguyên">
+
+                </div>
+                <button type="button" class="btn btn-info" onclick="addInteger()">Thêm số</button>
+            </form>
+
+            <div>
+                <h5>Dãy số hiện tại: <span id="dpArrayInt"></span></h5>
+            </div>
+        </div>
+
+    </section>
+    <button type="button" class="btn btn-success" onclick="arrayProperties()">Chức năng</button>
+    <button type="button" class="btn btn-danger" onclick="arrayDestroy()">Xóa dãy số</button>
+    <button type="button" class="btn btn-info" onclick="dpSwitch()">Đổi chỗ</button>
+    <button type="button" class="btn btn-success" onclick="sortAsc()">Sắp xếp tăng dần</button>
+    <button type="button" class="btn btn-success" onclick="sortDesc()">Sắp xếp giảm dần</button>
+    <section id="dpProperties" style="display: none; margin-top: 25px;">
+      <h5>Các chức năng</h5>
+      <p>Tổng các số dương trong mảng là <span id="sumPositive"></span></p>
+      <p>Có <span id="countPositive"></span> số dương</p>
+      <p>Số nhỏ nhất là <span id="minNumb"></span></p>
+      <p>Số dương nhỏ nhất là <span id="minPositive"></span></p>
+      <p>Số chẵn cuối cùng là <span id="lastEven"></span></p>
+      <p>Số nguyên tố đầu tiên là <span id="firstPrime"></span></p>
+    </section>
+    <section id="dpSwitch" style="display: none; width: 20%; margin: 25px auto;">
+      <div class="form-group">
+        <label for="">Nhập 2 vị trí cần đổi cho nhau</label>
+        <input type="number" class="form-control mt-sm-1" id="switch1" placeholder="Vị trí thứ nhất">
+        <input type="number" class="form-control mt-sm-1" id="switch2" placeholder="Vị trí thứ hai">
+        <small class="form-text text-muted">Vị trí bắt đầu từ 0</small>
+      </div>
+      <button type="button" class="btn btn-secondary" onclick="switchValues()">Đổi chỗ</button>
+    </section>
+    <section id="dpAsc" style="display: none;width: 20%; margin: 25px auto;">
+      <h5>Sắp xếp tăng dần</h5>
+      <p id="sortAsc"></p>
+    </section>
+    <section id="dpDesc" style="display: none;width: 20%; margin: 25px auto;">
+      <h5>Sắp xếp giảm dần</h5>
+      <p id="sortDesc"></p>
+    </section>
+    <section class="mt-sm-5">
+      <h3>Nhập vào dãy số thực</h3>
+        <div style="width: 40%; margin: auto;">
+            <form class="form-inline my-5">
+                <div class="form-group">
+                    <label for="">Thêm số thực vào dãy</label>
+                    <input type="number" name="" id="addNum" class="form-control mx-sm-3" placeholder="Nhập số thực">
+
+                </div>
+                <button type="button" class="btn btn-info" onclick="addNumb()">Thêm số</button>
+            </form>
+
+            <div>
+                <h5>Dãy số hiện tại: <span id="dpArrayNum"></span></h5>
+            </div>
+        </div>
+    </section>
+    <button type="button" class="btn btn-success" onclick="arrayProperties1()">Chức năng</button>
+    <section id="dpProperties1" style="display: none; margin-top: 25px;">
+      <p>Có <span id="countInt"></span> số nguyên trong dãy số thực</p>
+      <p id="compareSign"></p>
+    </section>
+
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
